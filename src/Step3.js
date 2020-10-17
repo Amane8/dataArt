@@ -56,7 +56,7 @@ class Step3 extends React.Component {
         </dl>
         <div className='controlBtn'>
           <button className='prevBtn' onClick={this.prevBtnClick}>Previous</button>
-          <button onClick={this.submitData}>Submit (fake)</button>
+          <button onClick={this.props.submitForm}>Submit (fake)</button>
         </div>
       </section>
     )

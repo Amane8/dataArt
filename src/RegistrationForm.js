@@ -39,6 +39,21 @@ class RegistrationForm extends React.Component {
     this.setState({symbolsAvailable: available}) 
   }
 
+  submitForm = (event) => {
+    event.preventDefault();
+    window.alert('Submitted')
+    this.setState({
+      currentStep: 1,
+      email: '',
+      password: '',
+      confirmPassword: '',
+      name: '',
+      dateOfBirth: '',
+      additionalInfo: '',
+      symbolsAvailable: 512,
+    })
+  }
+
   //Passing the entire state to the Step components (like in step 3) is an option to make it shorter, but I'm not sure which is the better practice
 
   render() {
@@ -66,6 +81,7 @@ class RegistrationForm extends React.Component {
           <Step3 
             currentStep = {this.state.currentStep}
             setCurrentStep = {this.setCurrentStep}
+            submitForm = {this.submitForm}
             info = {this.state}
           />
         </form>

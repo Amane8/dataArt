@@ -14,7 +14,7 @@ import { BrowserRouter } from "react-router-dom";
 //Things I'd do better given more time:
 //The validation right now works(more or less) but is pretty basic and the code is meh...
 //Showing mistakes on validation as an alert is very bad, I know, so there should be a custom pop up of some sorts
-//Calendar for Date of birth might cause problems in Safari
+//Calendar for Date of birth might cause problems on Safari
 //Design was sacrifised completely - css is messy. Looks aside, it should work on mobile
 
 ReactDOM.render(
